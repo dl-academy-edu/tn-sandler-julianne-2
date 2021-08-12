@@ -1,28 +1,91 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
-    <link href="/common.css" rel="stylesheet" />
-    <link href="style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/static/fonts/oswald.css" />
-    <link rel="shortcut icon" href="/static/images/favicon.ico" />
-    <title>Игрушки</title>
-  </head>
-  <body>
-    @@include('header/index.html')
-    <main class="toys-main">
-      <div class="container">
-        <h1 class="title-block title-block_one">Игрушки</h1>
-        <h2 class="title-block title-block_two">
-          Вы находитесь на странице игрушек
-        </h2>
-      </div>
+
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>DLK </title>
+        <link rel="stylesheet" href="../../../src/pages/main/style.scss">
+    <link href="../../components/common.scss" rel="stylesheet" />
+    <link rel="stylesheet" href="../../components/footer/_footer.scss">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@300;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap"
+            rel="stylesheet">
+        <!--<link rel="stylesheet" type="text/css" href="css/normalize.css" />-->
+        <link rel="shortcut icon" href="../../static/images/favicon.ico">
+    </head>
+    
+    <body>
+     @@include('header/index.html')
+
+    <title>Toys</title>
+    
+    <main class="container">
+        <h1 class="title-category">TOY FOR KIDS</h1>
+        @@include('breadcrumbs/index.html')
+        @@include('filter/index.html')
+        
+        <section class="toys__menu_catalog">
+            <a class="toys__menu_item_link" href="#">
+                <ul class="toys__menu_list">
+                    <li class="toys__menu_item">
+                        <img src="../../static/images/products 1.jpg" alt="" height="385" width="380">
+
+                        <h2 class="toys__menu_item_title">SHARKY BEAN BAG CHAIR COVER</h2>
+                        <span class="toys__menu_price">$60.00 USD</span>
+                    </li>
+            </a>
+
+            <li class="toys__menu_item">
+                <a class="toys__menu_item_link" href="#">
+                    <img src="../../static/images/products 2.jpg" alt="" height="385" width="380">
+
+                    <h2 class="toys__menu_item_title">BRASS DECO FRAMES</h2>
+                    <span class="toys__menu_price">$66.00 USD</span>
+            </li>
+            </a>
+
+            <li class="toys__menu_item">
+                <a class="toys__menu_item_link" href="#">
+                    <img src="../../static/images/products 3.jpg" alt="" height="385" width="380">
+
+                    <h2 class="toys__menu_item_title">CIBO FULL APRON</h2>
+                    <span class="toys__menu_price">$60.00 USD</span>
+            </li>
+            </a>
+
+            <li class="toys__menu_item">
+                <a class="toys__menu_item_link" href="#">
+                    <img src="../../static/images/products 4.jpg" alt="" height="385" width="380">
+
+                    <h2 class="toys__menu_item_title">GATCHA GATCHA GUMBALL MACHINE</h2>
+                    <span class="toys__menu_price">$56.00 USD</span>
+            </li>
+            </a>
+            <li class="toys__menu_item">
+                <a class="toys__menu_item_link" href="#">
+                    <img src="../../static/images/products 5.jpg" alt="" height="385" width="380">
+
+                    <h2 class="toys-item-title">CHRISTMAS ADVENT SCENTED CANDLE</h2>
+                    <span class="toys__menu_price">$29.00 USD</span>
+            </li>
+            </a>
+            <li class="toys__menu_item">
+                <a class="toys__menu_item_link" href="#">
+                    <img src="../../static/images/products 6.jpg" alt="" height="385" width="380">
+
+                    <h2 class="toys__menu_item_title">TANGLE SPINNING TEA LIGHT</h2>
+                    <span class="toys__menu_price">$56.00 USD</span>
+            </li>
+            </a>
+            </ul>
+        </section>
+
+        @@include('flippin/index.html')
     </main>
     @@include('footer/index.html')
-    <script src="index.js"></script>
-  </body>
+
+</body>
+
 </html>

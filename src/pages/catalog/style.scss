@@ -1,3 +1,37 @@
-main.catalog-main {
- padding: 30px 0;
+/*CATEGORY*/
+.category__menu_title{
+ width: 454px;
+ font-family: var(--font-montserrat);
+ font-style: normal;
+ font-weight: bold;
+ font-size: 38px;
+ line-height: 46px;
+ text-transform: uppercase;
+ color: #1E0606;
+ margin-left:0px ;
+ &__list,&__item, 
+ &__item-right{
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
 }
+}
+
+//не стала переносить наверх, так как не поняла, как перенести 23 строку//
+.category-item-right:not(:nth-child(3n)) {
+ margin-right: 20px;
+ margin-bottom: 23px;
+ }
+ 
+ /* DESCRIPTION */
+ .description {
+  max-width: 680px;
+  width: 100%;
+  margin-left: 200px;
+  padding: 32px 0 39px;
+  &__title{
+   margin: 0 0 24px;
+  }
+ }
