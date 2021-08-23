@@ -1,3 +1,47 @@
-main.toys-main {
- padding: 30px 0;
+.flipping-control {
+ display: flex;
+ justify-content: space-between;
+ padding-bottom: 47px;
 }
+
+.flipping-control button {
+ background-color: transparent;
+ border: none;
+ padding: 0;
+ cursor: pointer;
+}
+
+/*BREADCRUMBS*/
+
+.breadcrumbs {
+ font-family: var(--font-crimsontext);
+ font-style: italic;
+ font-weight: normal;
+ font-size: 20px;
+ line-height: 25px;
+ padding: 16px 0 50px;
+ &__list{
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+ }
+ li{
+  margin-right: 20px;
+ }
+ &_active{
+  text-transform: capitalize;
+  opacity: 0.5;
+ }
+ }
+.breadcrumbs-link::after {
+ content: '>';
+ display: inline-block;
+ background-image: url('/images/Vector\ .jpg');
+ background-size: 9px 12px;
+ background-repeat: no-repeat;
+ margin-left: 20px;
+ height: 12px;
+ width: 9px;
+}
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Catalog </title>
+    <link rel="stylesheet" href="../../../src/pages/main/style.scss">
+    <link href="../../components/common.scss" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@300;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap"
+        rel="stylesheet">
+    <!--<link rel="stylesheet" type="text/css" href="css/normalize.css" />-->
+    <link rel="shortcut icon" href="../../static/images/favicon.ico">
+</head>
+@@include('header/index.html')
+<main class="container">
+ <h1 class="title_category">Blog</h1>
+ <div class="breadcrumbs">
+  <ul class="breadcrumbs_list">
+  <li><a class="breadcrumbs_link" href="/">Home</a></li>
+  <li class="breadcrumbs_item_active">Blog</li>
+  </ul>
+  </div>
+ @@include('article/index.html')
+</div>
+@@include('flipping/index.html')
+
+</main>
+
+@@include('footer/index.html')
