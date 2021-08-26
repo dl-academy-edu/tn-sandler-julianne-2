@@ -1,72 +1,79 @@
+/*1*/
 /*BREADCRUMBS*/
 
 .breadcrumbs {
-  font-family: var(--font-crimsontext);
-  font-style: italic;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 25px;
-  padding: 16px 0 50px;
-  &__list{
-    list-style-type: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-  }
-  li{
-   margin-right: 20px;
-  }
-   &__link::after{
-    content: '>';
-    display: inline-block;
-    background-image: url('/images/Vector\ .jpg');
-    background-size: 9px 12px;
-    background-repeat: no-repeat;
-    margin-left: 20px;
-    height: 12px;
-    width: 9px;
-   }
-&__active{
-    text-transform: capitalize;
-    opacity: 0.5;
-   }
+font-family: var(--font-crimsontext);
+font-style: italic;
+font-weight: normal;
+font-size: 20px;
+line-height: 25px;
+padding: 16px 0 50px;
+&__list{
+list-style-type: none;
+display: flex;
+margin: 0;
+padding: 0;
 }
-
+&__item-active{
+text-transform: capitalize;
+opacity: 0.5;
+}
+}
+ 
+.breadcrumbs__list li {
+margin-right: 20px;
+}
+ 
+.breadcrumbs__link::after {
+content: '';
+display: inline-block;
+background-image: url('../../static/images/Vector\ \(Stroke\).jpg');
+background-size: 9px 12px;
+background-repeat: no-repeat;
+margin-left: 20px;
+height: 12px;
+width: 9px;
+}
  
  
 /*CATEGORY*/
-.category__menu_title{
- width: 454px;
- font-family: var(--font-montserrat);
- font-style: normal;
- font-weight: bold;
- font-size: 38px;
- line-height: 46px;
- text-transform: uppercase;
- color: #1E0606;
- margin-left:0px ;
- &__list,&__item, 
- &__item-right{
+.category__title{
+width: 454px;
+font-family: var(--font-montserrat);
+font-style: normal;
+font-weight: bold;
+font-size: 38px;
+line-height: 46px;
+text-transform: uppercase;
+color: #1E0606;
+margin-left:0px ;
+}
+.category__list{
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
-}
-}
-
-.category-item-right:not(:nth-child(3n)) {
- margin-right: 20px;
- margin-bottom: 23px;
- }
- 
- /* DESCRIPTION */
- .description {
-  max-width: 680px;
-  width: 100%;
-  margin-left: 200px;
-  padding: 32px 0 39px;
-  &__title{
-   margin: 0 0 24px;
   }
- }
+  .category__item,
+  .category__item-right:not(:nth-child(3n)) {
+  margin-right: 20px;
+  margin-bottom: 23px;
+  }
+  
+  .category__item+.category__item-right {
+  margin-left: auto;
+  }
+  
+  /* DESCRIPTION */
+  
+  .description {
+   max-width: 680px;
+   width: 100%;
+   margin-left: 200px;
+   padding: 32px 0 39px;
+   &__title{
+    margin: 0 0 24px;
+   }
+  }
+  

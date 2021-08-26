@@ -1,3 +1,4 @@
+<!--1-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,36 +17,36 @@
   <body>
     @@include('header/index.html')
     <main class="container">
-      <section class="slider">
-          <div class="slider-body">
-              <div class="slider-control">
-                  <div class="slider-counter">01</div>
-                  <div class="slider-toggle">
-                      <ul>
-                          <li class="slider-toggle-item">
-                              <button class="slider-toggle-btn slider-toggle-active" aria-label="button slide one"
-                                  type="button" data-slidenumber="01"></button>
-                          </li>
-                          <li class="slider-toggle-item">
-                              <button class="slider-toggle-btn" aria-label="button slide two" type="button"
-                                  data-slidenumber="02"></button>
-                          </li>
-                          <li class="slider-toggle-item">
-                              <button class="slider-toggle-btn" aria-label="button slide there" type="button"
-                                  data-slidenumber="03"></button>
-                          </li>
-                          <li class="slider-toggle-item">
-                              <button class="slider-toggle-btn" aria-label="button slide four" type="button"
-                                  data-slidenumber="04"></button>
-                          </li>
-                      </ul>
-                  </div>
-              </div>
+        <section class="slider">
+            <div class="slider-body">
+                <div class="slider-control">
+                    <div class="slider-counter">01</div>
+                    <div class="slider-toggle">
+                        <ul>
+                            <li class="slider-toggle-item">
+                                <button class="slider-toggle-btn slider-toggle-active" aria-label="button slide one"
+                                    type="button" data-slidenumber="01"></button>
+                            </li>
+                            <li class="slider-toggle-item">
+                                <button class="slider-toggle-btn" aria-label="button slide two" type="button"
+                                    data-slidenumber="02"></button>
+                            </li>
+                            <li class="slider-toggle-item">
+                                <button class="slider-toggle-btn" aria-label="button slide there" type="button"
+                                    data-slidenumber="03"></button>
+                            </li>
+                            <li class="slider-toggle-item">
+                                <button class="slider-toggle-btn" aria-label="button slide four" type="button"
+                                    data-slidenumber="04"></button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
               <div class="slider-text">
                   <h1 class="slider-title slider-text-item">THE OOH NOO COLLECTION</h1>
                   <p class="slider-text-item">Designed in Slovenia</p>
-                  <button class="slider-text-btn button" type="button">EXPLORE NOW</button>
+                  <button class="slider-text-btn button  banner-js" type="button">EXPLORE NOW</button>
               </div>
               <img class="slider-img" src="static/images/banner.png" alt="" class="poster" width="636" height="489">
           </div>
@@ -81,63 +82,12 @@
               </div>
           </section>
 
-
-          <section class="servise container">
-              <div class="service-img">
-                  <img src="static/images/servise img.jpg" alt="" width="480" height="559">
-              </div>
-              <div class="about-service">
-
-                  <h2 class="service-title">Delivery</h2>
-                  <ul class="service-menu">
-                      <li class="service-item"><a href="#" class="service-fon">Delivery</a></li>
-                      <li class="service-item"><a href="#">Guarantee</a></li>
-                      <li class="service-item"><a href="#">Credit</a></li>
-                  </ul>
-                  <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am
-                      completely shocked that four years have flown by. It's simply magical.</p>
-                  <p>What started as an outlet to deal with the traumatic loss of my husband, dlk has now become a
-                      truly happy place for me and i have you and all of the beautiful designers that we work with to
-                      thank!</p>
-                  <a href="#" class="service-button">LEARN MORE</a>
-              </div>
-          </section>
-
-
-          <section class="partners">
-              <h2 class="hidden"> Partners</h2>
-              <ul class="partner-list">
-
-                  <li class="partner-item"><img src="static/images/brand 1.jpg" alt="" width="193" height="60"></li>
-                  <li class="partner-item"><img src="static/images/brand2.jpg" alt="" width="179" height="61"></li>
-                  <li class="partner-item"><img src="static/images/brand3.jpg" alt="" width="216" height="46"></li>
-                  <li class="partner-item"><img src="static/images/brand4.jpg" alt="" width="211" height="40"></li>
-              </ul>
-          </section>
-
-          <section class="map">
-              <div class="about-company">
-                  <h2 class="title-company">Design Life Kids</h2>
-                  <h3 class="subtitle-company">About Us</h3>
-                  <p class="subtitle-company2">
-                      Some days i feel like i've been working on dlk my entire life and there are other days that i am
-                      completely shocked that four years have flown by. It's simply magical.
-                  </p>
-                  <a href="#" class="button-company">BUY NOW</a>
-              </div>
-              <div class="about-map">
-                  <h2 class="title-map">Contacts</h2>
-                  <p class="subtitle-map">Some days i feel like i've been working on dlk my entire life and there are
-                      other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-                  <img src="static/images/map.png" alt="geography-map" class="geography-map" width="483" height="196">
-              </div>
-          </section>
-  </main>
+        @@include('servise/index.html')
+          @@include('partner/index.html')
+          @@include('map/index.html')
+        </main>
   @@include('footer/index.html')
+  @@include('popup/index.html')
+  <script src="scripts.js"></script>
 </body>
 </html>
-
-
-
-
-

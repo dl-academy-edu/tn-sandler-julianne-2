@@ -1,0 +1,190 @@
+ /*1*/
+ .popup::after {
+ width: 100%;
+ height: 100vh;
+background: rgba(125, 151, 218, 0.8);
+ position: fixed;
+ top: 0;
+ left: 0;
+ display: none;
+}
+
+.popup-form {
+ position: fixed;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+ width: 680px;
+ display: none;
+}
+
+.popup-open,
+.popup-overlay-open {
+ display: block;
+}
+
+.popup-form .contact-form {
+ padding: 50px;
+}
+
+.popup-close {
+ position: absolute;
+ top: 15px;
+ right: 15px;
+ cursor: pointer;
+ background: transparent;
+ border: none;
+}
+
+.contact-form {
+ max-width: 780px;
+ width: 100%;
+ background: #EEEEEE;
+ margin: 0 auto 80px;
+ padding: 50px 100px;
+}
+
+.contact-form fieldset {
+ border: none;
+ display: flex;
+ margin: 0;
+ padding: 0;
+ margin-bottom: 20px;
+}
+
+.contact-form label {
+ font-size: 18px;
+ line-height: 22px;
+ color: #6B6A6A;
+ margin-bottom: 6px;
+}
+
+.contact-form input,
+.contact-form textarea {
+ height: 50px;
+ border: 2px solid rgba(0, 0, 0, 0.5);
+ padding: 12px 20px;
+ font-size: 16px;
+ line-height: 25px;
+ background: transparent;
+}
+.contact-form textarea {
+ height: auto;
+ resize: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+ outline: none;
+ border: 2px solid rgba(255, 182, 18, 0.5);
+}
+.contact-form input:focus + label,
+.contact-form textarea:focus + label {
+ color: rgba(255, 182, 18, 0.5);
+}
+
+.contact-form input::placeholder {
+ color: #797979;
+}
+
+.contact-form legend {
+ font-size: 18px;
+ line-height: 22px;
+ color: #6B6A6A;
+ margin-bottom: 14px;
+}
+
+.contact-title {
+ font-weight: 900;
+ font-size: 50px;
+ line-height: 97.2%;
+ text-align: center;
+ color: #00559D;
+ margin-bottom: 60px;
+}
+
+.contact-wrapper {
+ display: flex;
+ /* flex-direction: column-reverse; */
+ flex-direction: column;
+}
+
+.contact-wrapper:focus-within label {
+ color: rgba(255, 182, 18, 0.5);
+}
+
+.contact-block {
+ max-width: 280px;
+ width: 100%;
+}
+
+.contact-line {
+ display: flex;
+ justify-content: space-between;
+}
+
+.checkbox label,
+.radiobox label {
+ position: relative;
+ padding-left: 30px;
+ margin-right: 33px;
+ cursor: pointer;
+}
+
+.input,
+.radio {
+ display: none;
+}
+
+.checkbox label:before,
+.checkbox label:after,
+.radiobox label:before,
+.radiobox label:after  {
+ content: '';
+ position: absolute;
+ display: block;
+}
+
+.checkbox label:before {
+ width: 19px;
+ height: 19px;
+ top: 0;
+ left: 0;
+ border: 2px solid rgba(0, 0, 0, 0.5);
+}
+.checkbox label:after {
+ width: 13px;
+ height: 13px;
+ top: 5px;
+ left: 5px;
+ background: #95459A;
+ opacity: 0;
+}
+
+.input:checked + label:after {
+ opacity: 1;
+} 
+
+
+
+.radiobox label:before {
+ width: 19px;
+ height: 19px;
+ top: 0;
+ left: 0;
+ border: 2px solid rgba(0, 0, 0, 0.5);
+ border-radius: 50%;
+}
+.radiobox label:after {
+ width: 13px;
+ height: 13px;
+ top: 5px;
+ left: 5px;
+ background: #95459A;
+ opacity: 0;
+ border-radius: 50%;
+}
+
+.radio:checked + label:after {
+ opacity: 1;
+} 

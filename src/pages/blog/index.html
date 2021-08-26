@@ -1,0 +1,32 @@
+<!--1-->
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@300;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <link href="/common.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/static/fonts/oswald.css" />
+    <link rel="shortcut icon" href="/static/images/favicon.ico">
+    <title>Blog</title>
+  </head>
+  <body>
+@@include('header/index.html')
+<main class="container">
+  <h1 class="blog__title">BLOG</h1>
+      <section class="breadcrumbs">
+      <ul class="breadcrumbs__list">
+      <li><a class="breadcrumbs__link" href="/">Home</a></li>
+      <li class="breadcrumbs__item-active">Blog</li>
+      </ul>
+      </section>
+@@include('article/index.html')
+@@include('flipping/index.html')
+@@include('footer/index.html')
+</main>
+</body>
+</html>

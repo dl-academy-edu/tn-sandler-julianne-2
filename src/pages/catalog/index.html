@@ -1,53 +1,51 @@
+<!--1-->
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Catalog </title>
-    <link rel="stylesheet" href="../../../src/pages/main/style.scss">
-    <link href="../../components/common.scss" rel="stylesheet" />
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@300;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap"
-        rel="stylesheet">
-    <!--<link rel="stylesheet" type="text/css" href="css/normalize.css" />-->
-    <link rel="shortcut icon" href="../../static/images/favicon.ico">
-</head>
-<body>
- @@include('header/index.html')
- 
-
-  <main class="container">
-
-   
-    <h1 class="category__menu_title">Category Products</h1>
-    <section class="breadcrumbs">
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@300;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <link href="/common.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/static/fonts/oswald.css" />
+    <link rel="shortcut icon" href="/static/images/favicon.ico">
+    <title>Catalog</title>
+  </head>
+  <body>
+    @@include('header/index.html')
+    <main class="container">
+      <h1 class="category__title">Category Products</h1>
+      <section class="breadcrumbs">
       <ul class="breadcrumbs__list">
       <li><a class="breadcrumbs__link" href="/">Home</a></li>
       <li class="breadcrumbs__item-active">Catalog</li>
       </ul>
       </section>
-    <section class="category__menu">
-      <ul class="category__menu_list">
-        <li class="category__menu_item">
-          <img src="../../static/images/product1.jpg" alt="Apparel kids">
-        </li>
-        <li class="category__menu_item"><img src="../../static/images/product2.jpg" alt="Holiday shop"></li>
-        <li class="category__menu_item"><img src="../../static/images/product3.jpg" alt="Toys"></li>
-        <li class="category__menu_item_right"><img src="../../static/images/product4.jpg" alt="Accessories"> </li>
-        <li class="category__menu_item_right"><img src="../../static/images/product5.jpg" alt="SALE"></li>
-        <li class="category__menu_item_right"><img src="../../static/images/product6.jpg" alt="APPAREL ADULTS"></li>
+      <section class="category">
+        <ul class="category__list">
+          <li class="category__item"><a href="#"> <img src="../../static/images/product1.jpg" alt="APPAREL
+            KIDS"></a> </li>
+        <li class="category__item"> <a href="#"> <img src="../../static/images/product2.jpg" alt="Holiday shop"></a></li>
+        <li class="category__item"><a href="#"><img src="../../static/images/product3.jpg" alt="Toys"></a></li>
+        <li class="category__item-right"><a href="#"><img src="../../static/images/product4.jpg" alt="Accessories"></a></li>
+        <li class="category__item-right"><a href="#"><img src="../../static/images/product5.jpg" alt="SALE"></a></li>
+        <li class="category__item-right"><a href="#"><img src="../../static/images/product6.jpg" alt="APPAREL ADULTS"></a></li>
       </ul>
-    </section>
-
-    <section class="description__menu">
-      <h2 class="description__menu_title">Product Description</h2>
-      <p>Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even
-        bathe her, just like a little sister.</p>
-      <p>A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an
-        excellent choice for a gift for a girl from 4 years old.</p>
-      <p>The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins
-        and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.</p>
-    </section>
-  </main>
-  @@include('footer/index.html')
+      </section>
+  
+      <section class="description">
+        <h2 class="description__title">Product Description</h2>
+        <p>Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even
+          bathe her, just like a little sister.</p>
+        <p>A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an
+          excellent choice for a gift for a girl from 4 years old.</p>
+        <p>The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins
+          and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.</p>
+      </section>
+    </main>
+    @@include('footer/index.html')
+  </body>
+</html>

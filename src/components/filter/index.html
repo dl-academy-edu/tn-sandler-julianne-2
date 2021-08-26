@@ -1,0 +1,67 @@
+<!--1-->
+
+<section class="filter-block">
+ <div class="container">
+     <div class="filter-cost">
+         <h3>Cost</h3>
+         <input class="cost-range" aria-label="Cost value" type="range" name="cost" id="cost" min="0"
+             max="500" value="105">
+         <div class="cost-values">
+             <span>0</span>
+             <span>500</span>
+         </div>
+     </div>
+     <div class="filter-color">
+         <h3>Color</h3>
+         <ul class="filter-color-list">
+             <li>
+                 <input type="checkbox" name="color-item-checkbox" id="one-color" checked>
+                 <label for="one-color" aria-label="Color black">Black</label>
+             </li>
+             <li>
+                 <input type="checkbox" name="color-item-checkbox" id="two-color">
+                 <label for="two-color" aria-label="Color blue">Blue</label>
+             </li>
+             <li>
+                 <input type="checkbox" name="color-item-checkbox" id="three-color">
+                 <label for="three-color" aria-label="Color green">Green</label>
+             </li>
+             <li>
+                 <input type="checkbox" name="color-item-checkbox" id="four-color">
+                 <label for="four-color" aria-label="Color white">White</label>
+             </li>
+         </ul>
+     </div>
+     <div class="filter-delivery">
+         <h3>Delivery</h3>
+         <ul class="filter-delivery-list">
+             <li>
+                 <input type="radio" name="delivery-item" id="delivery-item-one">
+                 <label for="delivery-item-one">Free shipping</label>
+             </li>
+             <li>
+                 <input type="radio" name="delivery-item" id="delivery-item-two" checked>
+                 <label for="delivery-item-two">Fast shipping</label>
+             </li>
+         </ul>
+     </div>
+     <div class="filter-amount">
+         <h3>Amount</h3>
+         <ul class="amount-list">
+             <li>
+                 <input type="radio" name="amount-item" id="amount-one-btn" checked>
+                 <label for="amount-one-btn" aria-label="Amount 0-5">0-5</label>
+             </li>
+             <li>
+                 <input type="radio" name="amount-item" id="amount-two-btn">
+                 <label for="amount-two-btn" aria-label="Amount 10-20">10-20</label>
+             </li>
+             <li>
+                 <input type="radio" name="amount-item" id="amount-three-btn">
+                 <label for="amount-three-btn" aria-label="Amount 20-50">20-50</label>
+             </li>
+         </ul>
+     </div>
+     <button class="filter-apply-btn button">Apply</button>
+ </div>
+</section>
