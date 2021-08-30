@@ -1,0 +1,26 @@
+/*1Partners*/
+ 
+.partners{
+ padding: 90px 0 86px 0;
+ }
+ 
+ .partner-list{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ }
+ 
+ .partner-item-item {
+ opacity: .5;
+ }
+ 
+ .partner-item:hover {
+ opacity: 1;
+ }
+ 
+ .partner-item:active {
+ opacity: .2;
+ }

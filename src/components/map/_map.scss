@@ -1,72 +1,18 @@
+/*1MAP and INFORMATION*/
+ 
 .map{
  display: flex;
  padding-bottom: 60px;
  }
+ 
  .about-company{
-     width: 543px;
-     margin-right: 110px;
-     background: #E1F0F7;
- }
- .title-company{
-     width: 357px;
-     height: 47px;
-     font-family: Montserrat;
-     font-style: normal;
-     font-weight: bold;
-     font-size: 38px;
-     line-height: 46px;
-     text-transform: uppercase;
-      color: #1E0606;
-      margin: 0px 0px 0px 30px;
- }
- 
- .subtitle-company{
-     width: 85px;
-     height: 33px;
-     font-family: Crimson Text;
-     font-style: italic;
-     font-weight: normal;
-     font-size: 20px;
-     line-height: 32px;
-     color: #1E0606;
-     margin: 31px 428px 10px 30px;
-     
- }
- 
- .subtitle-company2{
-     width: 483px;
-     height: 67px;
-     font-family: Open Sans;
-     font-style: normal;
-     font-weight: normal;
-     font-size: 16px;
-     line-height: 22px;
-  color: #1E0606;
-     margin: 10px 30px 20px 30px;
- }
- .button-company{
-     background: #000000;
-     color: #fff;
-     font-weight: bold;
-     font-size: 15px;
-     line-height: 18px;
-     width: 123px;
-    text-align: center;
-     padding: 9px;
-     border: none;
-     text-transform: uppercase;
-     display: block;
-     margin: 20px 390px 35px 30px;
- }
- 
- .about-map{
  width: 543px;
- height: 209px;
+ margin-right: 110px;
  background: #E1F0F7;
  }
  
- .title-map{
- width: 217px;
+ .title-company{
+ width: 357px;
  height: 47px;
  font-family: Montserrat;
  font-style: normal;
@@ -75,12 +21,69 @@
  line-height: 46px;
  text-transform: uppercase;
  color: #1E0606;
- margin: 26px 296px 20px 30px;
- 
+ margin: 0px 0px 0px 30px;
+ }
+  
+ .subtitle-company{
+ width: 85px;
+ height: 33px;
+ font-family: Crimson Text;
+ font-style: italic;
+ font-weight: normal;
+ font-size: 20px;
+ line-height: 32px;
+ color: #1E0606;
+ margin: 31px 428px 10px 30px;
+ }
+  
+ .subtitle-company2{
+ width: 483px;
+ height: 67px;
+ font-family: Open Sans;
+ font-style: normal;
+ font-weight: normal;
+ font-size: 16px;
+ line-height: 22px;
+ color: #1E0606;
+ margin: 10px 30px 20px 30px;
  }
  
+ .button-company{
+ background: #000000;
+ color: #fff;
+ font-weight: bold;
+ font-size: 15px;
+ line-height: 18px;
+ width: 123px;
+ text-align: center;
+ padding: 9px;
+ border: none;
+ text-transform: uppercase;
+ display: block;
+ margin: 20px 390px 35px 30px;
+ }
+  
+ .about-map{
+ width: 543px;
+ height: 209px;
+ background: #E1F0F7;
+ }
+  
+ .title-map{
+ width: 217px;
+ height: 47px;
+ font-family: var(--font-montserrat);
+ font-style: normal;
+ font-weight: bold;
+ font-size: 38px;
+ line-height: 46px;
+ text-transform: uppercase;
+ color: #1E0606;
+ margin: 26px 296px 20px 30px;
+ }
+  
  .subtitle-map{
-  width: 483px;
+ width: 483px;
  height: 66px;
  font-family: Open Sans;
  font-style: normal;
@@ -95,5 +98,5 @@
  width: 483px;
  height: 196px;
  margin: 20px 30px 60px 30px;
- background: url(images/map.png);
+ background: url(../../static/images/map.png);
  }

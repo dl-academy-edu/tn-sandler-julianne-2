@@ -1,4 +1,4 @@
-
+/*1*/
 .flipping-control {
  display: flex;
  justify-content: space-between;
@@ -12,38 +12,38 @@
  cursor: pointer;
 }
 
-.page-list {
+.page__list {
  list-style-type: none;
  display: flex;
  justify-content: center;
  padding-left: 65px;
-  li{
-   margin-right: 66px;
-  }
+ &__list{
+  margin-right: 66px;
+ }
 }
+
 
 .page__item {
  font-family: var(--font-montserrat);
  font-weight: bold;
  font-size: 16px;
  line-height: 20px;
-
-  &_active{
-   color: #C29974;
-  }
+ &__item-active{
+  color: #C29974;
+ }
 }
 
-.page__item:hover:not(.page-item-active) {
+.page__item:hover:not(.page__item-active) {
  opacity: 0.5;
 }
 
 .prev-page:hover svg path,
-.next-page:hover svg path {
+.page__item-next:hover svg path {
  stroke: #C29974;
  stroke-opacity: 1;
 }
 
 .prev-page:active svg path,
-.next-page:active svg path {
+.page__item-next:active svg path {
  stroke-opacity: 0.5;
 }
